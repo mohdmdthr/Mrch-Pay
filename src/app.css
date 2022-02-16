@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-color: #333333;
+  --bg-content: #525252;
+  --color-primary: #00b65f;
+  --color-text-dark: #cecece;
+  --color-hint: #8a8a8a;
+  --color-input-bg: #424242;
+
+  --font-primary: "Montserrat Alternates", sans-serif;
+  --font-agency: 
+  --font-amount: 'Exo 2', sans-serif;
+  --font-dollar: 'Baloo 2', cursive;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  background-color: var(--bg-color);
+  max-width: 420px;
+  min-height: 100vh;
+  color: #fff;
+  padding: 1rem;
+}

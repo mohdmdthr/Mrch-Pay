@@ -1,0 +1,11 @@
+input {
+  height: 50px;
+  width: 90%;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  background: none;
+  padding: 0 1rem;
+  background-color: var(--color-input-bg);
+  font-size: 1rem;
+  font-weight: 500;
+}

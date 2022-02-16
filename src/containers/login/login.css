@@ -1,0 +1,91 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  min-height: 100vh;
+}
+.login__logo {
+  height: 70px;
+}
+
+.login__form {
+  justify-content: space-around;
+  min-height: 75vh;
+}
+
+.login__form > * {
+  margin-bottom: 1rem;
+}
+
+.login__fields {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.login__fields > * {
+  margin-bottom: 2rem;
+}
+
+.login__phone {
+  display: flex;
+  width: 90%;
+}
+
+.login__code {
+  flex: 1;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.login__number {
+  flex: 3;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.login__password {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.login__toggle-password {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 50%;
+  right: 0;
+  transform: translate(-2rem, -50%);
+  cursor: pointer;
+}
+
+.login__forget {
+  color: var(--color-hint);
+}
+
+.login__btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login__signup {
+  color: var(--color-text);
+  margin-bottom: 1rem;
+}
+
+.login__signup-link {
+  color: inherit;
+}
+
+.msg {
+  align-self: flex-start;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}

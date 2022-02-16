@@ -1,0 +1,17 @@
+select {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  width: 80%;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  background: none;
+  padding: 0 1rem;
+  background-color: var(--color-input-bg);
+  appearance: none; /* Remove default arrow */
+  background-image: url(../../assets/icons/down-arrow.png); /* Add custom arrow */
+  background-repeat: no-repeat;
+  background-position: 70% center;
+  color: #fff;
+  font-size: 1rem;
+}
