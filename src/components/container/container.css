@@ -1,4 +1,5 @@
 .container {
+  display: grid;
   background-color: var(--bg-color);
   max-width: 100%;
   min-height: 100vh;

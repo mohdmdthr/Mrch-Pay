@@ -15,3 +15,8 @@ select {
   color: #fff;
   font-size: 1rem;
 }
+
+.signup-gender {
+  width: 90%;
+  background-position: 95% center;
+}

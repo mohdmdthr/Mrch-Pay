@@ -23,44 +23,42 @@ const countryCodes = [
 
 const Login = () => {
   return (
-    <>
-      <div className="login">
-        <img src={logo} alt="Logo" className="login__logo" />
-        <Form className="login__form">
-          <div className="login__fields">
-            <span className="msg">Welcome back!</span>
-            <div className="login__phone">
-              <Select className="login__code">
-                {countryCodes.map((item) => (
-                  <option key={item.country}>{item.code}</option>
-                ))}
-              </Select>
-              <Input className="login__number" placeholder="91XXXXXXX" />
-            </div>
-            <div className="login__password">
-              <Input inputType="password" placeholder="Password" />
-              <img
-                className="login__toggle-password"
-                src={visibility}
-                alt="Show password"
-              />
-            </div>
-            <a href="#" className="login__forget">
-              Forgot password?
+    <div className="login">
+      <img src={logo} alt="Logo" className="login__logo" />
+      <Form className="login__form">
+        <div className="login__fields">
+          <span className="msg">Welcome back!</span>
+          <div className="login__phone">
+            <Select className="login__code">
+              {countryCodes.map((item) => (
+                <option key={item.country}>{item.code}</option>
+              ))}
+            </Select>
+            <Input className="login__number" placeholder="91XXXXXXX" />
+          </div>
+          <div className="login__password">
+            <Input inputType="password" placeholder="Password" />
+            <img
+              className="login__toggle-password"
+              src={visibility}
+              alt="Show password"
+            />
+          </div>
+          <a href="#" className="login__forget">
+            Forgot password?
+          </a>
+        </div>
+        <div className="login__btn">
+          <span className="login__signup">
+            New to MrchPay?{" "}
+            <a href="#" className="login__signup-link">
+              Sign up
             </a>
-          </div>
-          <div className="login__btn">
-            <span className="login__signup">
-              New to MrchPay?{" "}
-              <a href="#" className="login__signup-link">
-                Sign up
-              </a>
-            </span>
-            <Button buttonText="Sign in" className="btn" />
-          </div>
-        </Form>
-      </div>
-    </>
+          </span>
+          <Button buttonText="Sign in" className="btn" />
+        </div>
+      </Form>
+    </div>
   );
 };
 
