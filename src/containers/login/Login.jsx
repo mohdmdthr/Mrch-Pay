@@ -4,7 +4,7 @@ import Input from "../../components/input/Input";
 import Select from "../../components/select/Select";
 import Button from "../../components/button/Button";
 
-import logo from "../../assets/img/light_logo.svg";
+import logo from "../../assets/img/Logo.svg";
 import show from "../../assets/icons/eyeon.svg";
 import visibility from "../../assets/icons/eye-off.svg";
 
