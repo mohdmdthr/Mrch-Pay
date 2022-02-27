@@ -1,0 +1,30 @@
+.container {
+  justify-content: flex-start;
+}
+
+.home {
+  padding: 2rem;
+}
+
+.home > * {
+  margin-bottom: 2rem;
+}
+
+.home__welcome {
+  text-align: start;
+}
+
+.home__card {
+  padding: 3rem 4rem;
+  background-color: var(--color-primary);
+  border-radius: 20px;
+}
+
+.home__add {
+  width: 100px;
+}
+
+.card__buttons {
+  display: flex;
+  justify-content: space-between;
+}
