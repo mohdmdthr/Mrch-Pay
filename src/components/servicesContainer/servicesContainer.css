@@ -1,0 +1,14 @@
+.servicesContainer {
+  min-height: 50vh;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--bg-color);
+  border-radius: 20px;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 64px);
+  justify-content: space-between;
+  row-gap: 1rem;
+}

@@ -1,11 +1,11 @@
 .container {
-  background-color: var(--bg-color);
+  background-color: var(--bg-content);
   display: flex;
   flex-direction: column;
   justify-content: center;
   max-width: 450px;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  /* padding: 2rem 1rem; */
   min-height: 100vh;
   text-align: center;
 }

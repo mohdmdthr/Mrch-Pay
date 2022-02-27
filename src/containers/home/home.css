@@ -3,7 +3,7 @@
 }
 
 .home {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .home > * {
@@ -15,7 +15,7 @@
 }
 
 .home__card {
-  padding: 3rem 4rem;
+  padding: 2rem 3rem;
   background-color: var(--color-primary);
   border-radius: 20px;
 }
@@ -27,4 +27,9 @@
 .card__buttons {
   display: flex;
   justify-content: space-between;
+}
+
+.servicesText {
+  text-align: start;
+  margin-bottom: 1rem;
 }

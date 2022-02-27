@@ -1,8 +1,9 @@
 .iconContainer {
-  padding: 1rem;
-  border-radius: 20px;
+  padding: 0.5rem;
+  border-radius: 15px;
   background-color: var(--color-primary);
+  cursor: pointer;
 }
 .iconBtn {
-  width: 32px;
+  width: 48px;
 }
