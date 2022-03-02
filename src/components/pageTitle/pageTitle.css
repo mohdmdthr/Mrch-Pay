@@ -1,0 +1,24 @@
+.page-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-title__icon {
+  width: 64px;
+  margin-right: 1rem;
+}
+
+.page-title__title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.page-title__title {
+  font-weight: 700;
+}
+
+.page-title__desc {
+  margin-top: 0.3rem;
+}

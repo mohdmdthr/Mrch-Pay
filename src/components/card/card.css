@@ -1,0 +1,47 @@
+.card {
+  width: 300px;
+  height: 190px;
+  background-color: #ffa500;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.card__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__chip {
+  display: block;
+  width: 48px;
+}
+
+.card__placeholder {
+  font-size: 2rem;
+}
+
+.card__date-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+}
+
+.date-issued {
+  margin-right: auto;
+}
+
+.date-validity {
+  margin-right: 1rem;
+  text-transform: uppercase;
+}
+
+.date-expiry {
+  text-transform: uppercase;
+}
+
+.card__holder {
+  text-align: start;
+}

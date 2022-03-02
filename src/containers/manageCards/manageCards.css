@@ -1,0 +1,9 @@
+.manage-cards {
+  padding: 1rem;
+}
+
+.manage-cards__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
