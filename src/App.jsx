@@ -5,6 +5,7 @@ import Login from "./containers/login/Login";
 import Signup from "./containers/signup/Signup";
 import Home from "./containers/home/Home";
 import ManageCards from "./containers/manageCards/ManageCards";
+import ManageCode from "./containers/manageCode/ManageCode";
 
 import "./app.css";
 
@@ -16,7 +17,8 @@ const App = () => {
         {/* <Login />
         <Signup /> */}
         {/* <Home /> */}
-        <ManageCards />
+        {/* <ManageCards /> */}
+        <ManageCode />
       </Container>
     </>
   );

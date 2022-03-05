@@ -8,3 +8,12 @@
   font-size: 1rem;
   cursor: pointer;
 }
+
+.btn--big {
+  padding: 1.5rem 4rem;
+  width: 90%;
+}
+
+.manage-code__submit {
+  margin-top: auto;
+}

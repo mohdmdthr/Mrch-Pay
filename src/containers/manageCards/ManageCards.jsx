@@ -20,12 +20,16 @@ const ManageCards = () => {
         <IconButton icon={addCardIcon} altText="Add card" iconText="Add card" />
         <IconButton
           icon={createCardIcon}
-          altText="Add card"
-          iconText="Add card"
+          altText="Create card"
+          iconText="Create card"
         />
-        <IconButton icon={writeIcon} altText="Add card" iconText="Add card" />
-        <IconButton icon={deleteIcon} altText="Add card" iconText="Add card" />
-        <IconButton icon={lockIcon} altText="Add card" iconText="Add card" />
+        <IconButton icon={writeIcon} altText="Edit" iconText="Edit" />
+        <IconButton icon={deleteIcon} altText="Delete" iconText="Delete" />
+        <IconButton
+          icon={lockIcon}
+          altText="Manage code"
+          iconText="Manage code"
+        />
       </div>
       <Card
         cardType="Credit Card"
