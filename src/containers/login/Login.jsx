@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import Form from "../../components/form/Form";
 import Input from "../../components/input/Input";
 import Select from "../../components/select/Select";
@@ -44,18 +46,20 @@ const Login = () => {
               alt="Show password"
             />
           </div>
-          <a href="#" className="login__forget">
+          <Link to="/forget-password" className="login__forget">
             Forgot password?
-          </a>
+          </Link>
         </div>
         <div className="login__btn">
           <span className="login__signup">
             New to MrchPay?{" "}
-            <a href="#" className="login__signup-link">
+            <Link to="/signup" className="login__signup-link">
               Sign up
-            </a>
+            </Link>
           </span>
-          <Button buttonText="Sign in" />
+          <Link to="/">
+            <Button buttonText="Sign in" />
+          </Link>
         </div>
       </Form>
     </div>

@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import PageTitle from "../../components/pageTitle/PageTitle";
 import IconButton from "../../components/iconButton/IconButton";
 import Card from "../../components/card/Card";
@@ -17,19 +19,33 @@ const ManageCards = () => {
     <div className="manage-cards">
       <PageTitle title="Manage Cards" icon={cardsIcon} />
       <div className="manage-cards__buttons">
-        <IconButton icon={addCardIcon} altText="Add card" iconText="Add card" />
-        <IconButton
-          icon={createCardIcon}
-          altText="Create card"
-          iconText="Create card"
-        />
-        <IconButton icon={writeIcon} altText="Edit" iconText="Edit" />
-        <IconButton icon={deleteIcon} altText="Delete" iconText="Delete" />
-        <IconButton
-          icon={lockIcon}
-          altText="Manage code"
-          iconText="Manage code"
-        />
+        <Link to="add-card">
+          <IconButton
+            icon={addCardIcon}
+            altText="Add card"
+            iconText="Add card"
+          />
+        </Link>
+        <Link to="create-card">
+          <IconButton
+            icon={createCardIcon}
+            altText="Create card"
+            iconText="Create card"
+          />
+        </Link>
+        <Link to="edit-card">
+          <IconButton icon={writeIcon} altText="Edit" iconText="Edit" />
+        </Link>
+        <Link to="delete-card">
+          <IconButton icon={deleteIcon} altText="Delete" iconText="Delete" />
+        </Link>
+        <Link to="manage-code">
+          <IconButton
+            icon={lockIcon}
+            altText="Manage code"
+            iconText="Manage code"
+          />
+        </Link>
       </div>
       <Card
         cardType="Credit Card"
