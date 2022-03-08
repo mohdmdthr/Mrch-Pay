@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import IconButton from "../../components/iconButton/IconButton";
 import ServicesContainer from "../../components/servicesContainer/ServicesContainer";
 
@@ -23,26 +25,50 @@ const Home = () => {
       <main className="home">
         <h3 className="home__welcome">Hi, Username!</h3>
         <div className="home__card">
-          <img src={add} alt="Add card" className="home__add" />
+          <Link to="manage-cards/add-card">
+            <img src={add} alt="Add card" className="home__add" />
+          </Link>
         </div>
 
         <div className="card__buttons">
-          <IconButton icon={debitCards} />
-          <IconButton icon={card} />
-          <IconButton icon={clock} />
-          <IconButton icon={notification} />
+          <Link to="manage-cards">
+            <IconButton icon={debitCards} altText="Manage cards" />
+          </Link>
+          <Link to="my-wallet">
+            <IconButton icon={card} altText="My wallet" />
+          </Link>
+          <Link to="transaction">
+            <IconButton icon={clock} altText="Transaction" />
+          </Link>
+          <Link to="notifications">
+            <IconButton icon={notification} altText="Notifications" />
+          </Link>
         </div>
       </main>
       <ServicesContainer>
         <h3 className="servicesText">Services</h3>
         <div className="services">
-          <IconButton icon={bank} />
-          <IconButton icon={exchange} />
-          <IconButton icon={invoice} />
-          <IconButton icon={petrol} />
-          <IconButton icon={phone} />
-          <IconButton icon={ticket} />
-          <IconButton icon={graduationHat} />
+          <Link to="services/government">
+            <IconButton icon={bank} altText="Government" />
+          </Link>
+          <Link to="services/transfers">
+            <IconButton icon={exchange} altText="Transfers" />
+          </Link>
+          <Link to="services/bills">
+            <IconButton icon={invoice} altText="Bills" />
+          </Link>
+          <Link to="services/fuel">
+            <IconButton icon={petrol} altText="Fuel" />
+          </Link>
+          <Link to="services/smart-apps">
+            <IconButton icon={phone} altText="Smart apps" />
+          </Link>
+          <Link to="services/tickets">
+            <IconButton icon={ticket} altText="Tickets" />
+          </Link>
+          <Link to="services/education">
+            <IconButton icon={graduationHat} altText="Education" />
+          </Link>
         </div>
       </ServicesContainer>
     </>
