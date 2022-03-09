@@ -27,14 +27,20 @@ html {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  
   background-color: var(--bg-content);
   font-family: var(--font-primary);
   color: #fff;
   font-size: 1rem;
   font-weight: 500;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   min-height: 100vh;
   text-align: center;
+  max-width: 450px;
+  margin: 0 auto;
 }

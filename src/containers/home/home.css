@@ -1,9 +1,6 @@
-.container {
-  justify-content: flex-start;
-}
-
 .home {
-  padding: 1rem;
+  padding: 2rem;
+  border: 1px solid black;
 }
 
 .home > * {
@@ -15,9 +12,15 @@
 }
 
 .home__card {
-  padding: 2rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 190px;
+  margin: 0 auto;
   background-color: var(--color-primary);
-  border-radius: 20px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
 }
 
 .home__add {
@@ -26,10 +29,12 @@
 
 .card__buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 .servicesText {
   text-align: start;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
