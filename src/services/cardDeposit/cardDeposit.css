@@ -1,0 +1,29 @@
+.card-deposit {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+.card-deposit__total {
+  margin-top: 3rem;
+}
+
+.card-deposit__form {
+  margin-top: 4rem;
+}
+
+.card-deposit__form input,
+.card-deposit__form select {
+  width: 100%;
+}
+
+.card-deposit__form input,
+.card-deposit__form select {
+  margin-bottom: 1rem;
+}
+
+.card-deposit__btn {
+  margin-top: 3rem;
+}

@@ -1,0 +1,40 @@
+.my-code {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 100vh;
+}
+.my-code__details {
+  background-color: var(--bg-color);
+  padding: 2rem 0;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.my-code__user,
+.my-code__phone,
+.my-code__id {
+  width: 80%;
+  background-color: var(--bg-content);
+  margin: 0.1rem auto;
+  padding: 1.2rem;
+  text-align: start;
+  font-weight: 700;
+}
+
+.my-code__user {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-top: 2rem;
+}
+
+.my-code__id {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.my-code__qr-scan {
+  width: 200px;
+  margin-top: 2rem;
+}

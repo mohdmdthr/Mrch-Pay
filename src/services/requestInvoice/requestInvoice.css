@@ -1,0 +1,10 @@
+.request-invoice {
+  display: grid;
+  min-height: 100vh;
+  align-items: flex-start;
+  padding: 2rem 1rem;
+}
+
+.request-invoice__form :first-child {
+  margin-bottom: 2rem;
+}

@@ -1,0 +1,29 @@
+.withdraw {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+.withdraw__total {
+  margin-top: 3rem;
+}
+
+.withdraw__form {
+  margin-top: 4rem;
+}
+
+.withdraw__form input,
+.withdraw__form select {
+  width: 100%;
+}
+
+.withdraw__form input,
+.withdraw__form select {
+  margin-bottom: 1rem;
+}
+
+.withdraw__btn {
+  margin-top: 3rem;
+}

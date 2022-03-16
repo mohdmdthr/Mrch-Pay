@@ -1,0 +1,18 @@
+.deposit {
+  display: grid;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+.deposit__buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 10rem;
+  justify-self: center;
+}
+
+.deposit__buttons .btn-service {
+  width: 100%;
+}

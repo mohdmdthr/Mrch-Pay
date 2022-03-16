@@ -1,0 +1,19 @@
+.wallet-id-enter {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+.wallet-id-enter__total {
+  margin-top: 3rem;
+}
+
+.wallet-id-enter__desc {
+  margin-bottom: 4rem;
+}
+
+.wallet-id-enter__input {
+  margin-bottom: 3rem;
+}

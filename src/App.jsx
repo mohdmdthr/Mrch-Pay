@@ -10,6 +10,17 @@ import ManageCards from "./containers/manageCards/ManageCards";
 import ManageCode from "./services/manageCode/ManageCode";
 import AddCard from "./services/addCard/AddCard";
 import CreateCard from "./services/createCard/CreateCard";
+import MyWallet from "./services/myWallet/MyWallet";
+import MyCode from "./services/myCode/MyCode";
+import Exchange from "./services/exchange/Exchange";
+import WalletIDEnter from "./services/walletIDEnter/WalletIDEnter";
+import ExchangeConfirm from "./services/exchangeConfirm/ExchangeConfirm";
+import Deposit from "./services/deposit/Deposit";
+import TraditionalDeposit from "./services/traditional/TraditionalDeposit";
+import CardDeposit from "./services/cardDeposit/CardDeposit";
+import Withdraw from "./services/withdraw/Withdraw";
+import RequestInvoice from "./services/requestInvoice/RequestInvoice";
+import RequestInvoiceConfirm from "./services/requestInvoiceConfirm/RequestInvoiceConfirm";
 import ServicesContainer from "./components/servicesContainer/ServicesContainer";
 
 import "./app.css";
@@ -19,9 +30,30 @@ const App = () => {
     <BrowserRouter>
       <div className="main-wrapper">
         <Routes>
-          <Route index element={<Home />} />
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<Signup />} />
+          <Route path="/">
+            <Route index element={<Home />} />
+            <Route path="my-wallet">
+              <Route index element={<MyWallet />} />
+              <Route path="my-code" element={<MyCode />} />
+              <Route path="exchange">
+                <Route index element={<Exchange />} />
+                <Route path="wallet-id-enter" element={<WalletIDEnter />} />
+                <Route path="exchange-confirm" element={<ExchangeConfirm />} />
+              </Route>
+              <Route path="deposit">
+                <Route index element={<Deposit />} />
+                <Route path="traditional" element={<TraditionalDeposit />} />
+                <Route path="card" element={<CardDeposit />} />
+              </Route>
+              <Route path="withdraw" element={<Withdraw />} />
+              <Route path="request-invoice">
+                <Route index element={<RequestInvoice />} />
+                <Route path="confirm" element={<RequestInvoiceConfirm />} />
+              </Route>
+            </Route>
+          </Route>
           <Route path="manage-cards">
             <Route index element={<ManageCards />} />
             <Route path="add-card" element={<AddCard />} />

@@ -19,3 +19,25 @@
   margin-top: 0.4rem;
   width: min-content;
 }
+
+.btn-service {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+  width: 90%;
+  height: 60px;
+  border-radius: 20px;
+  padding: 0 2rem;
+}
+
+.btn-service .iconText {
+  width: max-content;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.btn-service .iconBtn {
+  width: 48px;
+  margin-inline-end: 2rem;
+}

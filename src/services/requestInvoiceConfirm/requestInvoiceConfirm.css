@@ -1,0 +1,36 @@
+.request-invoice-confirm {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 100vh;
+}
+.request-invoice-confirm__details {
+  padding: 2rem 0;
+}
+
+.request-invoice-confirm__user,
+.request-invoice-confirm__phone,
+.request-invoice-confirm__id {
+  width: 80%;
+  background-color: var(--bg-color);
+  margin: 0.1rem auto;
+  padding: 1.2rem;
+  text-align: start;
+  font-weight: 700;
+}
+
+.request-invoice-confirm__user {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-top: 2rem;
+}
+
+.request-invoice-confirm__id {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.request-invoice-confirm__form input {
+  margin-bottom: 1rem;
+}
